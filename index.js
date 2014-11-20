@@ -3,16 +3,18 @@
 
 
 
-var running_subtotal, running_total, running_tax;
+var running_subtotal;
+var running_total;
+var running_tax;
 
 function cash_register(item) {
 	var subtotal, total, tax;
 	subtotal = prices[item];
 	tax = subtotal * .15;
 	total = subtotal + tax;
-	running_subtoal = running_subtotal + subtotal
-	running_tax = running_tax + tax
-	running_total = running_total + total 	
+	running_subtotal = running_subtotal + subtotal;
+	running_tax = running_tax + tax;
+	running_total = running_total + total;	
 }
 
 
