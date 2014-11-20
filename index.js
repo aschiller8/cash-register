@@ -2,9 +2,7 @@
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
 
-var total;
-var subtotal;
-var tax;
+
 var running_subtotal, running_total, running_tax;
 
 function cash_register(item) {
@@ -12,9 +10,11 @@ function cash_register(item) {
 	subtotal = prices[item];
 	tax = subtotal * .15;
 	total = subtotal + tax;
-	
-	
+	running_subtoal = running_subtotal + subtotal
+	running_tax = running_tax + tax
+	running_total = running_total + total 	
 }
+
 
 document.getElementById('Benz').addEventListener('click',Benz);
 document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
