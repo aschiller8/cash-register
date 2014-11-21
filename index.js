@@ -2,7 +2,7 @@
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
 document.getElementById('cancel_purchase').addEventListener('click', cancel_purchase);
-document.getElementById('purchase car').addEventListener('click', purchasse car);
+document.getElementById('purchase_car').addEventListener('click', purchase_car);
 document.getElementById('Benz').addEventListener('click',Benz);
 document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
 document.getElementById('Mustang').addEventListener('click',Mustang);
