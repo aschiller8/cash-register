@@ -1,6 +1,8 @@
 "use strict"; // This line chooses a JavaScript dialect, one that helps both jsLint (used in OrionHub) and browsers catch errors.
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
+document.getElementById('cancel_purchase').addEventListener('click', cancel_purchase);
+document.getElementById('purchase_car').addEventListener('click', purchasse_car);
 document.getElementById('Benz').addEventListener('click',Benz);
 document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
 document.getElementById('Mustang').addEventListener('click',Mustang);
