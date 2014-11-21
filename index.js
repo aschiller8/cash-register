@@ -1,6 +1,37 @@
 "use strict"; // This line chooses a JavaScript dialect, one that helps both jsLint (used in OrionHub) and browsers catch errors.
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
+document.getElementById('Benz').addEventListener('click',Benz);
+document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
+document.getElementById('Mustang').addEventListener('click',Mustang);
+document.getElementById('Lambo').addEventListener('click',Lambo);
+document.getElementById('Ram_1500').addEventListener('click',Ram_1500);
+document.getElementById('Ford_F150').addEventListener('click',Ford_F150);
+document.getElementById('Jaguar').addEventListener('click',Jaguar);
+document.getElementById('Porsche').addEventListener('click',Porsche);
+document.createElement('Mini_Coup').addEventListener('click',Mini_Coup);
+
+
+var prices = {
+    
+	'Benz': 100000,
+    
+    'Mini_Van': 30000,
+    
+    'Mustang': 60000,
+  	
+  	'Mini_Coup': 45000,
+    
+    'Porsche': 75000,
+   
+   'Ram_1500': 50000,
+    
+   'Ford_F150': 45000,
+    
+    'Jaguar': 65000,
+    
+    'Lambo': 100000,
+};
 
 
 var running_subtotal;
@@ -18,31 +49,20 @@ function cash_register(item) {
 }
 
 function purchase_car() {
-runningtotal = 0;
-runningsubtotal = 0;
-runningtax = 0;
+running_total = 0;
+running_subtotal = 0;
+running_tax = 0;
 i = i + 1;
 update();
 }
 
 function cancel_purchase() {
-runningtotal = 0;
-runningsubtotal = 0;
-runningtax = 0;
+running_total = 0;
+running_subtotal = 0;
+running_tax = 0;
 update();
 }
 
-
-
-document.getElementById('Benz').addEventListener('click',Benz);
-document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
-document.getElementById('Mustang').addEventListener('click',Mustang);
-document.getElementById('Lambo').addEventListener('click',Lambo);
-document.getElementById('Ram_1500').addEventListener('click',Ram_1500);
-document.getElementById('Ford_F150').addEventListener('click',Ford_F150);
-document.getElementById('Jaguar').addEventListener('click',Jaguar);
-document.getElementById('Porsche').addEventListener('click',Porsche);
-document.createElement('Mini_Coup').addEventListener('click',Mini_Coup);
 
 function Benz() {
 	cash_register('Benz');
