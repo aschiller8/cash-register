@@ -49,6 +49,8 @@ function cash_register(item) {
 	running_tax = running_tax + tax;
 	running_total = running_total + total;	
 }
+var i = 0;
+var update = 0;
 
 function purchase_car() {
 running_total = 0;
@@ -70,34 +72,34 @@ function Benz() {
 	cash_register('Benz');
 }
 
-function MiniVan() {
+function Mini_Van() {
 	cash_register('Mini_Van');
 }
 
-function mustang(){
+function Mustang(){
 	cash_register('Mustang');
 }
 
-function lambo(){
+function Lambo(){
 	cash_register('Lambo');
 }
 
-function ram1500(){
+function Ram_1500(){
 	cash_register('Ram_1500');
 }
 
-function fordf150(){
+function Ford_F150(){
 	cash_register('Ford_F150');
 }
 
-function jaguar(){
+function Jaguar(){
 	cash_register('Jaguar');
 }
 
-function porsche(){
+function Porsche(){
 	cash_register('Porsche');
 }
 
-function minicoup(){
+function Mini_Coup(){
 	cash_register('Mini_Coup');
 }
