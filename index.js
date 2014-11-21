@@ -2,7 +2,7 @@
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
 document.getElementById('cancel_purchase').addEventListener('click', cancel_purchase);
-document.getElementById('purchase_car').addEventListener('click', purchasse_car);
+document.getElementById('purchase car').addEventListener('click', purchasse car);
 document.getElementById('Benz').addEventListener('click',Benz);
 document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
 document.getElementById('Mustang').addEventListener('click',Mustang);
@@ -11,8 +11,7 @@ document.getElementById('Ram_1500').addEventListener('click',Ram_1500);
 document.getElementById('Ford_F150').addEventListener('click',Ford_F150);
 document.getElementById('Jaguar').addEventListener('click',Jaguar);
 document.getElementById('Porsche').addEventListener('click',Porsche);
-document.createElement('Mini_Coup').addEventListener('click',Mini_Coup);
-
+document.getElementById('Mini_Coup').addEventListener('click',Mini_Coup);
 
 var prices = {
     
