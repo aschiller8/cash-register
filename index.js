@@ -17,6 +17,22 @@ function cash_register(item) {
 	running_total = running_total + total;	
 }
 
+function purchase_car() {
+runningtotal = 0;
+runningsubtotal = 0;
+runningtax = 0;
+i = i + 1;
+update();
+}
+
+function cancel_purchase() {
+runningtotal = 0;
+runningsubtotal = 0;
+runningtax = 0;
+update();
+}
+
+
 
 document.getElementById('Benz').addEventListener('click',Benz);
 document.getElementById('Mini_Van').addEventListener('click',Mini_Van);
